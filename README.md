@@ -10,9 +10,12 @@ Selenium
 12/19
 Instagram:
 # Features (finished so far)
-  -login user\n
+  -login user
+  
   -like photo
+  
   -follow user
+  
   -unfollow user
 # Features (in progress)
   -commenting
