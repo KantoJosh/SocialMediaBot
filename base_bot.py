@@ -7,12 +7,20 @@ class SocialMediaBot():
     def __init__(self):
         ''' Initiate Chrome WebDriver'''
         self.driver = webdriver.Chrome()
+        self.driver.maximize_window()
         
+
+    
     def navigate_to(self,url):
-        '''Go to URL. Easier to read than get method'''
-        self.driver.get(url)
-        self.website = url
         
+        if url != None and url != self.driver.current_url:
+            self.website = url
+            self.driver.get(url)
+            time.sleep(1)
+        else:
+            print(f"Already at {self.driver.current_url}")
+
+
     def login(self,email,password,login_location,email_xpath,pw_xpath):
         '''Finds login button, logs user in with given information after finding email and password
             fields to fill in'''
