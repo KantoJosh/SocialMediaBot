@@ -5,7 +5,7 @@ Python Bot automated with Selenium to log into any social media platform and tak
 # Requirements
 Python 3.4+
 
-Selenium
+<a href = "https://selenium-python.readthedocs.io/"Selenium(can install via pip)</a>
 
 WebDriver (Chrome is utilized in this code, but can be easily changed to allow FireFox,etc.)
 
