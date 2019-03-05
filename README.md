@@ -38,6 +38,10 @@ Python Bot automated with Selenium to log into any social media platform and tak
   -Get URLs of posts continuously from Instagram explore page (ex. liking every photo with a certain hashtag)
   
   
+# FUTURE
+  - Utilize machine learning (numpy?) to predict user follower count/growth in the future.
+  
+  
   
   
   
