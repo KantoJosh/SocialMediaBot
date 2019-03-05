@@ -1,6 +1,7 @@
 from base_bot import SocialMediaBot
 from collections import namedtuple
 import time
+import os
 
 class InstagramBot(SocialMediaBot):
     BASE_URL = "https://www.instagram.com/"
@@ -186,8 +187,11 @@ class InstagramBot(SocialMediaBot):
     
     
 if __name__ == "__main__":
+    print(os.environ.get("INSTAGRAM_PW"))
+    print(os.environ.get("INSTAGRAM_USERNAME"))
     try:        
-        username = "testb0t123"
+        #username = "testb0t123"
+        username = os.getenv("INSTAGRAM")
         password = "G4NEXwYBCwJ66up"
         insta_bot = InstagramBot()
         time.sleep(3)
