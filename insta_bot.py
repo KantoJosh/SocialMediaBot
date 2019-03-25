@@ -190,9 +190,8 @@ if __name__ == "__main__":
     print(os.environ.get("INSTAGRAM_PW"))
     print(os.environ.get("INSTAGRAM_USERNAME"))
     try:        
-        #username = "testb0t123"
-        username = os.getenv("INSTAGRAM")
-        password = "G4NEXwYBCwJ66up"
+        username = "Insert username here"
+        password = "Insert password jhere"
         insta_bot = InstagramBot()
         time.sleep(3)
         insta_bot.login(username,password,
