@@ -22,7 +22,7 @@ class InstaTest(unittest.TestCase):
     
     def setUp(self):
         self.bot = InstagramBot()
-        self.bot.login("testb0t123","G4NEXwYBCwJ66up",
+        self.bot.login("<insert username here>","<insert pw here>",
                     "//a[@href='/accounts/login/?source=auth_switcher']",
                     "//input[@name='username']",
                     "//input[@name='password']")
@@ -32,7 +32,7 @@ class InstaTest(unittest.TestCase):
     def test_user_stats(self):
         """Tests user stats including username, post count, follower count,
         and following count """
-        self.bot.navigate_to(InstagramBot.BASE_URL + "testb0t123/")
+        self.bot.navigate_to(InstagramBot.BASE_URL + "<insert username here>/")
         user_stats = self.bot.get_user_stats()
         self.assertEqual(user_stats.post_count, 0)
         self.assertEqual(user_stats.follower_count,1)
