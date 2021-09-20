@@ -12,11 +12,11 @@ class InstaTest(unittest.TestCase):
 # # 
 # #        """Executes setup method before every testing function"""
 # #        cls.bot = InstagramBot()
-# #        cls.bot.login("testb0t123","G4NEXwYBCwJ66up",
+# #        cls.bot.login("<insert username here>","<insert password here>",
 # #                    "//a[@href="/accounts/login/?source=auth_switcher"]",
 # #                    "//input[@name="username"]",
 # #                    "//input[@name="password"]")
-# #        cls.bot.navigate_to(InstagramBot.BASE_URL + "testb0t123/")
+# #        cls.bot.navigate_to(InstagramBot.BASE_URL + "<insert username>/")
 # #        time.sleep(2)
 # #==============================================================================
     
